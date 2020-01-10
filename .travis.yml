@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - stable
+install:
+  - npm install
+services:
+  - postgresql
+before_script:
+  - psql -c 'create database teamwork;' -U postgres
+notifications:
+  email: false
+script:
+  - "npm run test"
+sudo: false

@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+  <header class="home-header flex">
+    <div class="header-top flex">
+      <h1 class="header__title title">Teamwork</h1>
+      <div class="header-top-btns flex">
+        <a href="./index.html" class="btn btn-signout">Sign Out</a>
+        <a href="./admin.html" class="btn btn-admin">Admin</a>
+      </div>
+    </div>
+    <section class="header-controls flex">
+      <button class="btn-top btn-my-articles">My Articles</button>
+      <button class="btn-top btn-other-articles btn__highlight">All Articles</button>
+    </section>
+  </header>
+  <main class="home-main flex">
+    <section class="my-articles hidden">
+      <div class="write-container">
+        <div class="write-article flex">
+          <p>Write and share your article</p>
+          <textarea class="text-input compose-article" cols="30" rows="10"></textarea>
+          <div class="choose-category flex">
+            <p>Category:</p>
+            <input type="text" list="categories">
+            <datalist name="" id="categories">
+              <option value="Nature"></option>
+              <option value="Life"></option>
+              <option value="Technology"></option>
+              <option value="Art"></option>
+            </datalist>
+          </div>
+          <div class="action-btns share-btns flex">
+            <button class="action-btn btn-cancel">Cancel</button>
+            <button class="action-btn btn-share">Share</button>
+          </div>
+        </div>
+      </div>
+      <div class="my-articles-container flex">
+        <section class="articles flex">
+          <h2 class="articles-title">My articles:</h2>
+          <article class="article flex">
+            <div class="article-content">
+              <div class="author-box flex">
+                <div>
+                  <img src="../images/man.png" width="60px" height="60px" class="author-avatar" alt="author">
+                  <p class="author">Elvis Iraguha</p>
+                  <time>10 minutes ago</time>
+                </div>
+                <div class="category-tag flex">
+                  <h2 class="category-title">category/tag:</h2>
+                  <p>Technology</p>
+                </div>
+              </div>
+              <h3 class="article-title">Why Technology is increasing so fast?</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ullam nostrum quo, quaerat illum,
+                aspernatur nihil, soluta id saepe eum dicta sit nulla rem cumque quas repellat velit consequuntur
+                expedita!
+                
+                
+              </p>
+              <div class="article-controls flex">
+                <a href="./article.html" class="read-more">Read More</a>
+                <figure title="Comment article" class="comment-article flex article-control">
+                  <img src="../images/comment.png" width="40" height="40" alt="comment article">
+                  <figcaption class="figcaption">Comment</figcaption>
+                </figure>
+                <figure title="Edit article" class="edit-article flex article-control">
+                  <img src="../images/edit.png" width="40" height="40" alt="edit article">
+                  <figcaption class="figcaption">Edit</figcaption>
+                </figure>
+                <figure title="Delete article" class="delete-article flex article-control">
+                  <img src="../images/delete.png" width="40" height="40" alt="delete article">
+                  <figcaption class="figcaption">Delete</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="article-comments">
+              <h4 class="comments-title">Comments:</h4>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Alice Bob</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/man.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">John Doe</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Bob Alice</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="article flex">
+            <div class="article-content">
+              <div class="author-box flex">
+                <div>
+                  <img src="../images/man.png" width="60px" height="60px" class="author-avatar" alt="author">
+                  <p class="author">Elvis Iraguha</p>
+                  <time>20 minutes ago</time>
+                </div>
+                <div class="category-tag flex">
+                  <h2 class="category-title">category/tag:</h2>
+                  <p>Love</p>
+                </div>
+              </div>
+              <h3 class="article-title">The need to be perfect</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ullam nostrum quo, quaerat illum,
+                aspernatur nihil, soluta id saepe eum dicta sit nulla rem cumque quas repellat velit consequuntur
+                expedita!
+                
+                
+              </p>
+              <div class="article-controls flex">
+                <a href="./article.html" class="read-more">Read More</a>
+                <figure title="Comment article" class="comment-article flex article-control">
+                  <img src="../images/comment.png" width="40" height="40" alt="comment article">
+                  <figcaption class="figcaption">Comment</figcaption>
+                </figure>
+                <figure title="Edit article" class="edit-article flex article-control">
+                  <img src="../images/edit.png" width="40" height="40" alt="edit article">
+                  <figcaption class="figcaption">Edit</figcaption>
+                </figure>
+                <figure title="Delete article" class="delete-article flex article-control">
+                  <img src="../images/delete.png" width="40" height="40" alt="delete article">
+                  <figcaption class="figcaption">Delete</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="article-comments">
+              <h4 class="comments-title">Comments:</h4>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Alice Bob</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/man.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">John Doe</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Bob Alice</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="article flex">
+            <div class="article-content">
+              <div class="author-box flex">
+                <div>
+                  <img src="../images/man.png" width="60px" height="60px" class="author-avatar" alt="author">
+                  <p class="author">Elvis Iraguha</p>
+                  <time>30 minutes ago</time>
+                </div>
+                <div class="category-tag flex">
+                  <h2 class="category-title">category/tag:</h2>
+                  <p>Technology</p>
+                </div>
+              </div>
+              <h3 class="article-title">Starting software development career</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ullam nostrum quo, quaerat illum,
+                aspernatur nihil, soluta id saepe eum dicta sit nulla rem cumque quas repellat velit consequuntur
+                expedita!
+                
+                
+              </p>
+              <div class="article-controls flex">
+                <a href="./article.html" class="read-more">Read More</a>
+                <figure title="Comment article" class="comment-article flex article-control">
+                  <img src="../images/comment.png" width="40" height="40" alt="comment article">
+                  <figcaption class="figcaption">Comment</figcaption>
+                </figure>
+                <figure title="Edit article" class="edit-article flex article-control">
+                  <img src="../images/edit.png" width="40" height="40" alt="edit article">
+                  <figcaption class="figcaption">Edit</figcaption>
+                </figure>
+                <figure title="Delete article" class="delete-article flex article-control">
+                  <img src="../images/delete.png" width="40" height="40" alt="delete article">
+                  <figcaption class="figcaption">Delete</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="article-comments">
+              <h4 class="comments-title">Comments:</h4>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Alice Bob</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/man.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">John Doe</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Bob Alice</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="article flex">
+            <div class="article-content">
+              <div class="author-box flex">
+                <div>
+                  <img src="../images/man.png" width="60px" height="60px" class="author-avatar" alt="author">
+                  <p class="author">Elvis Iraguha</p>
+                  <time>40 minutes ago</time>
+                </div>
+                <div class="category-tag flex">
+                  <h2 class="category-title">category/tag:</h2>
+                  <p>Technology</p>
+                </div>
+              </div>
+              <h3 class="article-title">Do you think you know javascript? Take a look at these infamous tricks</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ullam nostrum quo, quaerat illum,
+                aspernatur nihil, soluta id saepe eum dicta sit nulla rem cumque quas repellat velit consequuntur
+                expedita!
+                
+                
+              </p>
+              <div class="article-controls flex">
+                <a href="./article.html" class="read-more">Read More</a>
+                <figure title="Comment article" class="comment-article flex article-control">
+                  <img src="../images/comment.png" width="40" height="40" alt="comment article">
+                  <figcaption class="figcaption">Comment</figcaption>
+                </figure>
+                <figure title="Edit article" class="edit-article flex article-control">
+                  <img src="../images/edit.png" width="40" height="40" alt="edit article">
+                  <figcaption class="figcaption">Edit</figcaption>
+                </figure>
+                <figure title="Delete article" class="delete-article flex article-control">
+                  <img src="../images/delete.png" width="40" height="40" alt="delete article">
+                  <figcaption class="figcaption">Delete</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="article-comments">
+              <h4 class="comments-title">Comments:</h4>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Alice Bob</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/man.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">John Doe</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Bob Alice</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="article flex">
+            <div class="article-content">
+              <div class="author-box flex">
+                <div>
+                  <img src="../images/man.png" width="60px" height="60px" class="author-avatar" alt="author">
+                  <p class="author">Elvis Iraguha</p>
+                  <time>40 minutes ago</time>
+                </div>
+                <div class="category-tag flex">
+                  <h2 class="category-title">category/tag:</h2>
+                  <p>Technology</p>
+                </div>
+              </div>
+              <h3 class="article-title">Programming and future jobs</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ullam nostrum quo, quaerat illum,
+                aspernatur nihil, soluta id saepe eum dicta sit nulla rem cumque quas repellat velit consequuntur
+                expedita!
+                
+                
+              </p>
+              <div class="article-controls flex">
+                <a href="./article.html" class="read-more">Read More</a>
+                <figure title="Comment article" class="comment-article flex article-control">
+                  <img src="../images/comment.png" width="40" height="40" alt="comment article">
+                  <figcaption class="figcaption">Comment</figcaption>
+                </figure>
+                <figure title="Edit article" class="edit-article flex article-control">
+                  <img src="../images/edit.png" width="40" height="40" alt="edit article">
+                  <figcaption class="figcaption">Edit</figcaption>
+                </figure>
+                <figure title="Delete article" class="delete-article flex article-control">
+                  <img src="../images/delete.png" width="40" height="40" alt="delete article">
+                  <figcaption class="figcaption">Delete</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="article-comments">
+              <h4 class="comments-title">Comments:</h4>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Alice Bob</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/man.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">John Doe</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Bob Alice</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="article flex">
+            <div class="article-content">
+              <div class="author-box flex">
+                <div>
+                  <img src="../images/man.png" width="60px" height="60px" class="author-avatar" alt="author">
+                  <p class="author">Elvis Iraguha</p>
+                  <time>30 minutes ago</time>
+                </div>
+                <div class="category-tag flex">
+                  <h2 class="category-title">category/tag:</h2>
+                  <p>Technology</p>
+                </div>
+              </div>
+              <h3 class="article-title">Incredible CSS tricks to improve your design</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ullam nostrum quo, quaerat illum,
+                aspernatur nihil, soluta id saepe eum dicta sit nulla rem cumque quas repellat velit consequuntur
+                expedita!
+                
+                
+              </p>
+              <div class="article-controls flex">
+                <a href="./article.html" class="read-more">Read More</a>
+                <figure title="Comment article" class="comment-article flex article-control">
+                  <img src="../images/comment.png" width="40" height="40" alt="comment article">
+                  <figcaption class="figcaption">Comment</figcaption>
+                </figure>
+                <figure title="Edit article" class="edit-article flex article-control">
+                  <img src="../images/edit.png" width="40" height="40" alt="edit article">
+                  <figcaption class="figcaption">Edit</figcaption>
+                </figure>
+                <figure title="Delete article" class="delete-article flex article-control">
+                  <img src="../images/delete.png" width="40" height="40" alt="delete article">
+                  <figcaption class="figcaption">Delete</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="article-comments">
+              <h4 class="comments-title">Comments:</h4>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Alice Bob</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/man.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">John Doe</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Bob Alice</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+    <section class="other-articles flex">
+      <div class="explore-container flex">
+        <div class="search-article flex">
+          <p>Search a specific article</p>
+          <input type="search" class="text-input search-article-input">
+          <button class="action-btn btn-search">Search</button>
+        </div>
+        <div class="category-container flex">
+          <label>Choose a category</label>
+          <input type="text" class="text-input" list="categories">
+          <button class="action-btn btn-search">Search</button>
+        </div>
+      </div>
+      <div class="latest-articles-container flex">
+        <section class="articles flex">
+          <h2 class="articles-title">Latest Articles:</h2>
+          <article class="article flex">
+            <div class="article-content">
+              <div class="author-box flex">
+                <div>
+                  <img src="../images/man.png" width="60px" height="60px" class="author-avatar" alt="author">
+                  <p class="author">Elvis Iraguha</p>
+                  <time>20 minutes ago</time>
+                </div>
+                <div class="category-tag flex">
+                  <h2 class="category-title">category/tag:</h2>
+                  <p>Technology</p>
+                </div>
+              </div>
+              <h3 class="article-title">Why Technology is increasing so fast?</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ullam nostrum quo, quaerat illum,
+                aspernatur nihil, soluta id saepe eum dicta sit nulla rem cumque quas repellat velit consequuntur
+                expedita!
+                
+                
+              </p>
+              <div class="article-controls flex">
+                <a href="./article.html" class="read-more">Read More</a>
+                <figure title="Comment article" class="comment-article flex article-control">
+                  <img src="../images/comment.png" width="40" height="40" alt="comment article">
+                  <figcaption class="figcaption">Comment</figcaption>
+                </figure>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="40" height="40" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="article-comments">
+              <h4 class="comments-title">Comments:</h4>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Alice Bob</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/man.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">John Doe</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Bob Alice</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="article flex">
+            <div class="article-content">
+              <div class="author-box flex">
+                <div>
+                  <img src="../images/girl.png" width="60px" height="60px" class="author-avatar" alt="author">
+                  <p class="author">Alice Jughead</p>
+                  <time>30 minutes ago</time>
+                </div>
+                <div class="category-tag flex">
+                  <h2 class="category-title">category/tag:</h2>
+                  <p>Life</p>
+                </div>
+              </div>
+              <h3 class="article-title">Interesting facts about Life</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ullam nostrum quo, quaerat illum,
+                aspernatur nihil, soluta id saepe eum dicta sit nulla rem cumque quas repellat velit consequuntur
+                expedita!
+                
+                
+              </p>
+              <div class="article-controls flex">
+                <a href="./article.html" class="read-more">Read More</a>
+                <figure title="Comment article" class="comment-article flex article-control">
+                  <img src="../images/comment.png" width="40" height="40" alt="comment article">
+                  <figcaption class="figcaption">Comment</figcaption>
+                </figure>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="40" height="40" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="article-comments">
+              <h4 class="comments-title">Comments:</h4>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Alice Bob</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/man.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">John Doe</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Bob Alice</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="article flex">
+            <div class="article-content">
+              <div class="author-box flex">
+                <div>
+                  <img src="../images/girl.png" width="60px" height="60px" class="author-avatar" alt="author">
+                  <p class="author">Alice Jughead</p>
+                  <time>40 minutes ago</time>
+                </div>
+                <div class="category-tag flex">
+                  <h2 class="category-title">category/tag:</h2>
+                  <p>Technology</p>
+                </div>
+              </div>
+              <h3 class="article-title">HTML tricks that will boost your productivity</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ullam nostrum quo, quaerat illum,
+                aspernatur nihil, soluta id saepe eum dicta sit nulla rem cumque quas repellat velit consequuntur
+                expedita!
+                
+                
+              </p>
+              <div class="article-controls flex">
+                <a href="./article.html" class="read-more">Read More</a>
+                <figure title="Comment article" class="comment-article flex article-control">
+                  <img src="../images/comment.png" width="40" height="40" alt="comment article">
+                  <figcaption class="figcaption">Comment</figcaption>
+                </figure>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="40" height="40" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="article-comments">
+              <h4 class="comments-title">Comments:</h4>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Alice Bob</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/man.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">John Doe</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Bob Alice</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="article flex">
+            <div class="article-content">
+              <div class="author-box flex">
+                <div>
+                  <img src="../images/man.png" width="60px" height="60px" class="author-avatar" alt="author">
+                  <p class="author">John Doe</p>
+                  <time>50 minutes ago</time>
+                </div>
+                <div class="category-tag flex">
+                  <h2 class="category-title">category/tag:</h2>
+                  <p>Technology</p>
+                </div>
+              </div>
+              <h3 class="article-title">Introducing the famous "Hello World!"</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ullam nostrum quo, quaerat illum,
+                aspernatur nihil, soluta id saepe eum dicta sit nulla rem cumque quas repellat velit consequuntur
+                expedita!
+                
+                
+              </p>
+              <div class="article-controls flex">
+                <a href="./article.html" class="read-more">Read More</a>
+                <figure title="Comment article" class="comment-article flex article-control">
+                  <img src="../images/comment.png" width="40" height="40" alt="comment article">
+                  <figcaption class="figcaption">Comment</figcaption>
+                </figure>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="40" height="40" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="article-comments">
+              <h4 class="comments-title">Comments:</h4>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Alice Bob</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/man.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">John Doe</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Bob Alice</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="article flex">
+            <div class="article-content">
+              <div class="author-box flex">
+                <div>
+                  <img src="../images/man.png" width="60px" height="60px" class="author-avatar" alt="author">
+                  <p class="author">Elvis Iraguha</p>
+                  <time>20 minutes ago</time>
+                </div>
+                <div class="category-tag flex">
+                  <h2 class="category-title">category/tag:</h2>
+                  <p>Technology</p>
+                </div>
+              </div>
+              <h3 class="article-title">Why Technology is increasing so fast?</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ullam nostrum quo, quaerat illum,
+                aspernatur nihil, soluta id saepe eum dicta sit nulla rem cumque quas repellat velit consequuntur
+                expedita!
+                
+                
+              </p>
+              <div class="article-controls flex">
+                <a href="./article.html" class="read-more">Read More</a>
+                <figure title="Comment article" class="comment-article flex article-control">
+                  <img src="../images/comment.png" width="40" height="40" alt="comment article">
+                  <figcaption class="figcaption">Comment</figcaption>
+                </figure>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="40" height="40" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="article-comments">
+              <h4 class="comments-title">Comments:</h4>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Alice Bob</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/man.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">John Doe</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Bob Alice</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="article flex">
+            <div class="article-content">
+              <div class="author-box flex">
+                <div>
+                  <img src="../images/girl.png" width="60px" height="60px" class="author-avatar" alt="author">
+                  <p class="author">Alice Jughead</p>
+                  <time>30 minutes ago</time>
+                </div>
+                <div class="category-tag flex">
+                  <h2 class="category-title">category/tag:</h2>
+                  <p>Life</p>
+                </div>
+              </div>
+              <h3 class="article-title">Interesting facts about Life</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ullam nostrum quo, quaerat illum,
+                aspernatur nihil, soluta id saepe eum dicta sit nulla rem cumque quas repellat velit consequuntur
+                expedita!
+                
+                
+              </p>
+              <div class="article-controls flex">
+                <a href="./article.html" class="read-more">Read More</a>
+                <figure title="Comment article" class="comment-article flex article-control">
+                  <img src="../images/comment.png" width="40" height="40" alt="comment article">
+                  <figcaption class="figcaption">Comment</figcaption>
+                </figure>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="40" height="40" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="article-comments">
+              <h4 class="comments-title">Comments:</h4>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Alice Bob</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/man.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">John Doe</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Bob Alice</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="article flex">
+            <div class="article-content">
+              <div class="author-box flex">
+                <div>
+                  <img src="../images/girl.png" width="60px" height="60px" class="author-avatar" alt="author">
+                  <p class="author">Alice Jughead</p>
+                  <time>40 minutes ago</time>
+                </div>
+                <div class="category-tag flex">
+                  <h2 class="category-title">category/tag:</h2>
+                  <p>Technology</p>
+                </div>
+              </div>
+              <h3 class="article-title">HTML tricks that will boost your productivity</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ullam nostrum quo, quaerat illum,
+                aspernatur nihil, soluta id saepe eum dicta sit nulla rem cumque quas repellat velit consequuntur
+                expedita!
+              </p>
+              <div class="article-controls flex">
+                <a href="./article.html" class="read-more">Read More</a>
+                <figure title="Comment article" class="comment-article flex article-control">
+                  <img src="../images/comment.png" width="40" height="40" alt="comment article">
+                  <figcaption class="figcaption">Comment</figcaption>
+                </figure>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="40" height="40" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="article-comments">
+              <h4 class="comments-title">Comments:</h4>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Alice Bob</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/man.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">John Doe</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Bob Alice</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="article flex">
+            <div class="article-content">
+              <div class="author-box flex">
+                <div>
+                  <img src="../images/man.png" width="60px" height="60px" class="author-avatar" alt="author">
+                  <p class="author">John Doe</p>
+                  <time>50 minutes ago</time>
+                </div>
+                <div class="category-tag flex">
+                  <h2 class="category-title">category/tag:</h2>
+                  <p>Technology</p>
+                </div>
+              </div>
+              <h3 class="article-title">Introducing the famous "Hello World!"</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ullam nostrum quo, quaerat illum,
+                aspernatur nihil, soluta id saepe eum dicta sit nulla rem cumque quas repellat velit consequuntur
+                expedita!
+                
+                
+              </p>
+              <div class="article-controls flex">
+                <a href="./article.html" class="read-more">Read More</a>
+                <figure title="Comment article" class="comment-article flex article-control">
+                  <img src="../images/comment.png" width="40" height="40" alt="comment article">
+                  <figcaption class="figcaption">Comment</figcaption>
+                </figure>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="40" height="40" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="article-comments">
+              <h4 class="comments-title">Comments:</h4>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Alice Bob</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/man.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">John Doe</p>
+                </div>
+              </div>
+              <div class="comment flex">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+                </p>
+                <figure title="Flag article as innapropriate" class="flag-article flag flex article-control">
+                  <img src="../images/flag.png" width="20" height="20" alt="flag article as innapropriate">
+                  <figcaption class="figcaption">Flag</figcaption>
+                </figure>
+                <div class="comment-author-box">
+                  <img src="../images/girl.png" width="40" height="40" class="author-avatar" alt="author">
+                  <p class="comment-author">Bob Alice</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+    <section class="modal hidden">
+      <div class="modal-contents">
+        <div class="modal-edit hidden">
+          <div class="modal-content">
+            <textarea cols="80" rows="12" class="text-input modal-update">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus labore modi aspernatur porro magnam! Similique ducimus exercitationem odio iure aliquam quas beatae, incidunt itaque, accusantium tempore, in numquam qui.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus labore modi aspernatur porro magnam! Similique ducimus exercitationem odio iure aliquam quas beatae, incidunt itaque, accusantium tempore, in numquam qui.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus labore modi aspernatur porro magnam! Similique ducimus exercitationem odio iure aliquam quas beatae, incidunt itaque, accusantium tempore, in numquam qui.
+            </textarea>
+          </div>
+          <div class="action-btns flex">
+            <button class="action-btn btn-cancel btn-close-modal">Cancel</button>
+            <button class="action-btn btn-update btn-close-modal">Update</button>
+          </div>
+        </div>
+        <div class="modal-delete hidden">
+          <p>Are you sure want to delete this article?</p>
+          <div class="action-btns flex">
+            <button class="action-btn btn-cancel btn-close-modal">Cancel</button>
+            <button class="action-btn btn-delete btn-close-modal">Delete</button>
+          </div>
+        </div>
+        <div class="modal-flag hidden">
+          <p>Are you sure want to flag this article/comment as innapropriate?</p>
+          <div class="action-btns flex">
+            <button class="action-btn btn-cancel btn-close-modal">Cancel</button>
+            <button class="action-btn btn-flag btn-close-modal">Flag</button>
+          </div>
+        </div>
+        <div class="modal-comment hidden">
+          <p>Write your comment in the box below</p>
+          <textarea cols="30" rows="10" class="text-input"></textarea>
+          <div class="action-btns flex">
+            <button class="action-btn btn-cancel btn-close-modal">Cancel</button>
+            <button class="action-btn btn-comment btn-close-modal">Comment</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer-home">
+    &copy; Teamwork 2019
+  </footer>
+  <script src="../js/home.js"></script>
+</body>
+
+</html>
